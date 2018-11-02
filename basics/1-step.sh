@@ -1,3 +1,6 @@
+#hajjiraya@gmail.com
+#Objet: Compte rendu Aterlier System 2
+
 mkdir f_1-step
 cd f_1-step
 
@@ -14,7 +17,7 @@ ls | grep "^annee[^0-9]"
 ls | egrep "^[0-9]+$"
 ls *ana*
 ls | egrep "^[Aa]"
-mv "*[41]{1}$" /tmp
+# mv "*[41]{1}$" /tmp
 
                       # work for Exercice Three
 cd ..
@@ -61,3 +64,4 @@ cd ../Rapport/docscd
 
 ls -l ../../Mail
 cd ../../
+ 
