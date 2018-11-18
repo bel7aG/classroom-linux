@@ -50,24 +50,43 @@ wc -c fich_user_6
 ls -i ./*
 
 # Exercice 2
+sudo groupadd info3R
 
 sudo adduser ali
-sudo groupadd info3R
+sudo adduser ali info3R
 su ali
-cd /home/ali
-mkdir prog projet && touch test1
-mkdir projet/shell && touch projet/rapport
+pwd
+mkdir /home/ali/{prog,projet} && touch /home/ali/test1
+mkdir /home/ali/projet/shell && touch /home/ali/projet/rapport
 
 ls -al
+
 pwd
 
 sudo useradd mohammed
 
-passwd mohammed
+sudo passwd mohammed
 
-sudo groupadd info3R
+sudo adduser mohammed info3R
 
-adduser mohammed info3R
+cat /etc/group /etc/passwd
 
-cat /etc/group
-cat /etc/etc
+sudo su mohammed
+
+mv ../ali/projet/rapport ./
+
+sudo chmod  740 /home/ali/projet/rapport # For spoted file: We need to read the file to move it
+sudo chmod  300 ./ # For mohamed home folder ==> we need to write and execute the folder
+
+#Successful because rapport in ali user allready the read permession for group users
+
+
+cp /home/ali/test1 ./
+chmod 300 ./  # read and execute mohamed
+#Successful because w dont need any permession for the
+#target file(test1) except the the execept the read and
+#execute permession for ali home folder
+#and we need x w for mohamed folder to complete this task
+
+
+ln /home/ali/test1 ./test1
