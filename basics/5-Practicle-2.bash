@@ -84,9 +84,8 @@ sudo chmod  300 ./ # For mohamed home folder ==> we need to write and execute th
 cp /home/ali/test1 ./
 chmod 300 ./  # read and execute mohamed
 #Successful because w dont need any permession for the
-#target file(test1) except the the execept the read and
+#target file(test1) except the read and
 #execute permession for ali home folder
 #and we need x w for mohamed folder to complete this task
-
 
 ln /home/ali/test1 ./test1
