@@ -4,6 +4,8 @@ cat > addresses
   R20 :45 :71142541 :Tunis
   Y30 :20 :73444000 :Sousse
 
+        # use wc -[lcw] file
+
 wc -l addresses #count line
 wc -c addresses #count chars
 wc -w addresses #count words
@@ -16,4 +18,9 @@ cat addresses1
 cp addresses addresses2
 tr ":" "\t" <addresses> addresses2
 
-who | wc -l # The who command shows you every login session open on the machine
+# miss QUESTION
+
+who | wc -l #count login session on the machin
+# The who command shows you every login session open on the machine
+
+ps -U BelhasseN | wc -l
