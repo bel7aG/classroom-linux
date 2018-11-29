@@ -1,8 +1,8 @@
 cat > addresses
-  M1:29 :73432641 :Sousse
-  A23 :31 :71423215 :Tunis
-  R20 :45 :71142541 :Tunis
-  Y30 :20 :73444000 :Sousse
+  M1:29:73432641 :Sousse
+  A23:31:71423215 :Tunis
+  R20:45:71142541 :Tunis
+  Y30:20:73444000 :Sousse
 
         # use wc -[lcw] file
 
